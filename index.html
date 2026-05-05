@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detikAlfaGaming - Portal Berita Game, Anime, dan Hiburan Terkini</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=32&h=32&q=80">
+    <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=180&h=180&q=80">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sumber berita terlengkap seputar dunia detikAlfaGaming, update Anime terbaru, Esports, Gadget, dan seluruh aspek kehidupan hiburan.">
+    <meta name="keywords" content="detikAlfaGaming, Berita Game, Anime, Esports, Film, Hiburan">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alfagamingdetik.com/">
+    <meta property="og:title" content="detikAlfaGaming - Portal Berita Game, Anime & Esports Terkini">
+    <meta property="og:description" content="Sumber berita terlengkap seputar dunia game, update Anime terbaru, Esports, Gadget, dan hiburan pop culture.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alfagamingdetik.com/">
+    <meta property="twitter:title" content="detikAlfaGaming - Portal Berita Game & Anime">
+    <meta property="twitter:description" content="Sumber berita terlengkap seputar dunia game, update Anime terbaru, dan hiburan pop culture.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="menu-overlay"></div>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <!-- Topbar -->
+        <div class="topbar container">
+            <div class="topbar-left">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i> <span>MENU</span>
+                </button>
+            </div>
+            
+            <div class="logo">
+                <a href="#">
+                    <h1><span class="text-primary">detik</span>AlfaGaming</h1>
+                </a>
+            </div>
+            
+            <div class="topbar-right">
+                <div class="search-container desktop-only">
+                    <input type="text" placeholder="Cari berita detikAlfaGaming, Anime...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="https://t.ly/reg.alfa" class="btn btn-outline desktop-only" target="_blank" rel="noopener noreferrer">Daftar Akun</a>
+                <a href="https://t.ly/alfa-sukses" class="btn btn-primary desktop-only" target="_blank" rel="noopener noreferrer">Masuk</a>
+                <button class="search-toggle mobile-only"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <!-- Tier 1 Navigation (Categories) -->
+        <nav class="category-nav">
+            <div class="container nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">AlfaNews</a></li>
+                    <li><a href="#">alfaAnime</a></li>
+                    <li><a href="#">alfaEsport</a></li>
+                    <li><a href="#">alfaGadget</a></li>
+                    <li><a href="#">alfaFilm</a></li>
+                    <li><a href="#">J-Pop / K-Pop</a></li>
+                    <li><a href="#">alfaLifestyle</a></li>
+                    <li class="dropdown">
+                        <a href="#">Lainnya <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Tier 2 Navigation (Trending Tags) -->
+        <div class="trending-nav">
+            <div class="container tag-wrapper">
+                <ul class="tag-links">
+                    <li class="tag-highlight"><a href="#">AetherForge Rilis 2026</a></li>
+                    <li><a href="#">#JujutsuKaisenS3</a></li>
+                    <li><a href="#">#ReviewPS6</a></li>
+                    <li><a href="#">Major Tournament</a></li>
+                    <li><a href="#">Rekomendasi Anime</a></li>
+                    <li><a href="#">Cosplay Event</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <aside class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><h2><span class="text-primary">detik</span>AlfaGaming</h2></div>
+            <button class="close-menu" id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="sidebar-content">
+            <div class="mobile-auth">
+                <a href="https://t.ly/reg.alfa" class="btn btn-outline full-width" style="display:block; text-align:center;" target="_blank" rel="noopener noreferrer">Daftar Akun</a>
+                <a href="https://t.ly/alfa-sukses" class="btn btn-primary full-width mt-1" style="display:block; text-align:center;" target="_blank" rel="noopener noreferrer">Masuk</a>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> AlfaNews</a></li>
+                <li><a href="#"><i class="fa-solid fa-tv"></i> alfaAnime</a></li>
+                <li><a href="#"><i class="fa-solid fa-trophy"></i> alfaEsport</a></li>
+                <li><a href="#"><i class="fa-solid fa-mobile-screen"></i> alfaGadget</a></li>
+                <li><a href="#"><i class="fa-solid fa-film"></i> alfaFilm</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content container">
+        
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="detikAlfaGaming Championship" class="banner-img">
+            <div class="banner-content">
+                <h2>detikAlfaGaming World Championship 2026</h2>
+                <p>Saksikan pertarungan epik tim-tim terbaik dari seluruh dunia. Dukung jagoanmu sekarang!</p>
+                <div class="banner-links">
+                    <a href="https://t.ly/alfa.vip" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-calendar"></i> Jadwal</a>
+                    <a href="https://t.ly/reg.alfa" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-ticket"></i> Beli Tiket</a>
+                    <a href="https://t.ly/alfa.vip" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-ranking-star"></i> Klasemen</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout-grid">
+            <!-- Left Column: Main News -->
+            <div class="content-primary">
+                
+                <!-- Headline Section -->
+                <section class="headline-section">
+                    <div class="section-header">
+                        <h3 class="section-title">Sorotan Utama</h3>
+                    </div>
+                    <div class="headline-grid" id="headline-container">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- Latest News Feed -->
+                <section class="latest-news-section">
+                    <div class="section-header">
+                        <h3 class="section-title">Berita Terbaru</h3>
+                        <div class="tabs mobile-only">
+                            <button class="tab-btn active">Terbaru</button>
+                            <button class="tab-btn">Terpopuler</button>
+                        </div>
+                    </div>
+                    <div class="news-list" id="latest-news-container">
+                        <!-- Injected via JS -->
+                    </div>
+                    <div class="load-more-container">
+                        <button class="btn btn-outline load-more">Muat Lebih Banyak Berita</button>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <aside class="content-sidebar desktop-only">
+                
+                <!-- Terpopuler Widget -->
+                <div class="widget">
+                    <div class="widget-header">
+                        <h4>Terpopuler</h4>
+                    </div>
+                    <ul class="popular-list" id="popular-container">
+                        <!-- Injected via JS -->
+                    </ul>
+                </div>
+
+                <!-- Ad/Promo Widget -->
+                <div class="widget ad-widget">
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Iklan Gadget">
+                    <div class="ad-label">Rekomendasi Editor</div>
+                    <h5>Gear Setup Impian untuk Pro Player 2026, Cek Daftarnya!</h5>
+                </div>
+
+                <!-- Rekomendasi Untuk Anda -->
+                <div class="widget">
+                    <div class="widget-header">
+                        <h4>Rekomendasi Untuk Anda</h4>
+                    </div>
+                    <div class="recommendation-grid" id="recommendation-container">
+                         <!-- Injected via JS -->
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2><span class="text-primary">detik</span>AlfaGaming</h2>
+                <p>Portal informasi terdepan dan terpercaya untuk seluruh ekosistem hiburan, game, anime, dan pop culture. Bagian dari detikAlfaGaming Universe.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">AlfaNews</a></li>
+                    <li><a href="#">alfaAnime</a></li>
+                    <li><a href="#">alfaEsport</a></li>
+                    <li><a href="#">alfaGadget</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Redaksi</a></li>
+                    <li><a href="#">Pedoman Media Siber</a></li>
+                    <li><a href="#">Karir</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 detikAlfaGaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
